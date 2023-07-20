@@ -1,7 +1,67 @@
 import pandas as pd
 
-mstats_2021 = pd.read_csv(r"C:\Users\mexic\atp-world-tour-tennis-data\csv\3_match_stats\match_stats_2021.csv")
+mstats_2018 = pd.read_csv(r"C:\Users\mexic\atp-world-tour-tennis-data\csv\3_match_stats\match_stats_2018.csv")
+mstats_2018
 
-#initial verification of import
-print(len(mstats_2021.index))
-print(mstats_2021.shape[0])
+#add column headings
+mstats_columns = ['match_id',
+'tourney_slug',
+'match_stats_url_suffix',
+'match_time',
+'match_duration',
+'winner_slug',
+'winner_serve_rating',
+'winner_aces',
+'winner_double_faults',
+'winner_first_serves_in',
+'winner_first_serves_total',
+'winner_first_serve_points_won',
+'winner_first_serve_points_total',
+'winner_second_serve_points_won',
+'winner_second_serve_points_total',
+'winner_break_points_saved',
+'winner_break_points_serve_total',
+'winner_service_games_played',
+'winner_return_rating',
+'winner_first_serve_return_won',
+'winner_first_serve_return_total',
+'winner_second_serve_return_won',
+'winner_second_serve_return_total',
+'winner_break_points_converted',
+'winner_break_points_return_total',
+'winner_return_games_played',
+'winner_service_points_won',
+'winner_service_points_total',
+'winner_return_points_won',
+'winner_return_points_total',
+'winner_total_points_won',
+'winner_total_points_total',
+'loser_slug',
+'loser_serve_rating',
+'loser_aces',
+'loser_double_faults',
+'loser_first_serves_in',
+'loser_first_serves_total',
+'loser_first_serve_points_won',
+'loser_first_serve_points_total',
+'loser_second_serve_points_won',
+'loser_second_serve_points_total',
+'loser_break_points_saved',
+'loser_break_points_serve_total',
+'loser_service_games_played',
+'loser_return_rating',
+'loser_first_serve_return_won',
+'loser_first_serve_return_total',
+'loser_second_serve_return_won',
+'loser_second_serve_return_total',
+'loser_break_points_converted',
+'loser_break_points_return_total',
+'loser_return_games_played',
+'loser_service_points_won',
+'loser_service_points_total',
+'loser_return_points_won',
+'loser_return_points_total',
+'loser_total_points_won',
+'loser_total_points_total']
+
+mstats_2018.columns = mstats_columns
